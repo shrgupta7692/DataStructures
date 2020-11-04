@@ -1,0 +1,16 @@
+Collection of items stored at contiguous memory locations.
+
+The idea is to store multiple items of the same type together.
+This makes it easier to calculate the position of each element by simply adding an offset to a base value,
+i.e., the memory location of the first element of the array (generally denoted by the name of the array).
+The base value is index 0 and the difference between the two indexes is the offset.
+
+In Java:
+Cloning of arrays
+
+When you clone a single dimensional array, such as Object[], a “deep copy” is performed
+with the new array containing copies of the original array’s elements as opposed to references.
+
+A clone of a multi-dimensional array (like Object[][]) is a “shallow copy” however,
+which is to say that it creates only a single new array with each element array a reference to
+an original element array, but subarrays are shared.
